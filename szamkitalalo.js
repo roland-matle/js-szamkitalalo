@@ -25,16 +25,34 @@ function submitGuess(event) {
     event.preventDefault();
     let guessValue = Number.parseInt(currentGuessField.value);
     console.log(guessValue, typeof guessValue);
-    if (Number.isNaN(guessValue)) {
+    if (validateGuess()) {
+        alert("klikk");
+    };
+}
 
-    } else if (guessValue < 1 || guessValue > 100) {
+function addGuessValidation() {
+    currentGuessField.classList.add("is-invalid");
+}
 
+function removeGuessValidation() {
+    currentGuessField.classList.remove("is-invalid");
+}
+
+function validateGuess() {
+    let guessValue = Number.parseInt(currentGuessField.value);
+    currentGuessField.value = guessValue;
+    if (Number.isNaN(guessValue) || guessValue < 1 || guessValue > 100) {
+        addGuessValidation();
+        return false;
     }
-    alert("klikk");
+    removeGuessValidation();
+    return true;
 }
 
 startGame();
 newGameButton.addEventListener("click", startGame);
 guessSubmitButton.addEventListener("click", submitGuess);
+currentGuessField.addEventListener("focus", removeGuessValidation);
+currentGuessField.addEventListener("change", validateGuess);
 
 console.log(target);
