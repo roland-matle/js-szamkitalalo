@@ -1,8 +1,8 @@
-#Számkitaláló játék
+# Számkitaláló játék
 
-##Link
+## Link
 
-##Leírás
+## Leírás
 
 Számítógép gondol egy egész számra 1 és 100 között. A felhasználó egy input mezőbe írja a tippjeit. A számítógép minden tippre a következők egyikét válaszolja:
 
