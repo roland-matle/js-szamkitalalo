@@ -16,7 +16,8 @@ Bármikor lehet új játékot indítani. Ilyenkor a korábbi tippek törlődnek 
 
 A játék során a tippek listája időrendi sorrendben megjelenik. Felül található a legutolsó tipped, alul pedig az első tipped.
 
-Lépések
+## Lépések
+
 1. lépés: Felhasználói felület kialakítása (HTML, Bootstrap)
 2. lépés: Új játék indítása: véletlen szám legenerálása
 3. lépés: Új játék indítása: felhasználói interfész alapállapotba hozása (korábbit tippek törlése, input mező tartalmának törlése)
